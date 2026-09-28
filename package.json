@@ -1,0 +1,25 @@
+{
+  "name": "cellular-handover-rca",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cellular handover event & drop root-cause analysis backend (synthetic data only)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/api/server.js",
+    "dev": "tsx src/api/server.ts",
+    "test": "tsx --test test/*.test.ts",
+    "demo": "tsx src/demo/run.ts",
+    "cli": "tsx src/cli/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.0"
+  }
+}
+
+
